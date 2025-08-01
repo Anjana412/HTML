@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full Page Design with Button</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      place-items: center;
+      text-align: center;
+      height: 100vh;
+      width: 100vw;
+      background-image: url('img2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.4rem 1rem;
+      font-size: 0.9rem;
+      background-color: #3498db; 
+      color: black; 
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2980b9; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1>T</h1>
+      <h2>Heading 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nesciunt,
+        quasi nulla impedit error harum aspernatur, itaque nemo odit sed architecto
+        vitae velit cum, quisquam quaerat! Ducimus dolore facere consequatur.
+        Lorem, ipsum dolor sit amet consectetur 
+        adipisicing elit. Sequi iure voluptatem at repudiandae, 
+        earum itaque animi tempore delectus est ab 
+        quisquam quasi ipsum nam! Expedita, dolorem! Ipsam expedita illum autem.
+      </p>
+      <button class="btn">Read More</button>
+    </div>
+  </div>
+</body>
+</html>

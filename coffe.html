@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<style>
+.main {
+  position: relative;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: white;
+
+}
+.upper {
+      display: flex;
+      position: relative;
+      height: 600px;
+      max-width: 1200px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0;
+      gap: 30px;
+      padding-bottom: 120px;
+     
+    }
+
+.text{
+      max-width: 600px;
+      padding-left: 50px;
+      font-size: larger;
+    }
+
+.img1{
+    height: 320px;
+    width: 320px;
+    position: absolute;
+    border-radius: 50%;    
+    object-fit: cover;
+    top: 100px;
+    left: 1000px;
+    z-index: 3;
+
+}
+.img2{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    border-radius: 50%;    
+    object-fit: cover;
+    top: 330px;
+    left: 1150px;
+    z-index: 5;
+
+}
+
+.btn{
+  background-color: #bb6005eb;    
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 20px;
+}
+
+.middle-box {
+  width: 800px;
+  height: 150px;
+  padding: 30px 20px;
+  position: absolute;      
+  top: 680px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;              
+  background-color: #fdd591;
+  border-radius: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.middle-content {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  max-width: 250px;
+}
+
+.middle-content h2 {
+  font-size: 20px;
+  color: black;
+  font-size: 25px;
+}
+
+.middle-content p {
+  font-size: 14px;
+font-size: medium;  
+color: #555;
+}
+
+.boxs {
+  display: flex;
+  justify-content: center; 
+  padding-top: 220px; 
+  align-items: center;         
+  gap: 70px;
+  padding: 60px 20px;margin-top: 60px;         
+  flex-wrap: wrap;   
+  background-color: rgb(43, 41, 41);      
+}
+
+.box {
+  display: flex;
+  flex-direction: column;      
+  justify-content: center;    
+  align-items: center;         
+  height: auto;
+  margin: 0;
+  padding-top: 100px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+.box img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+  
+}
+.box p{
+    color: white;
+}
+
+</style>
+<body>
+    <div class="main">
+        <div class="upper">
+            <div class="text">
+                <h1>Your Coffee</h1>
+                <h1>Your Vibe</h1>
+                <h1>Your Energy</h1>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos <br>delectus aliquam sit,<br> dicta doloribus minima facere totam ut pariatur
+        consequuntur rerum corrupti<br> similique, suscipit necessitatibus, velit ducimus nostrum voluptatibus sequi.
+      </p>
+      <input type="button" value="Explore" class="btn" />
+            </div>
+           
+            <div >
+           <img src="./coffee.jpg" class="img1"/>
+           </div>
+           <div >
+           <img src="./cofee3.jpg" class="img2">
+           </div>
+        </div>
+
+<!-- middle -->
+
+
+
+<div class="middle-box">
+  <div class="middle-content">
+    <i class="fas fa-mug-hot fa-2x" style="color:#bb6005;"></i>
+    <h2>190+</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae!</p>
+  </div>
+  <div class="middle-content">
+    <i class="fas fa-mug-hot fa-2x" style="color:#bb6005;"></i>
+    <h2>123K</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae!</p>
+  </div>
+  <div class="middle-content">
+    <i class="fas fa-mug-hot fa-2x" style="color:#bb6005;"></i>
+    <h2>58</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae!</p>
+  </div>
+</div>
+
+
+
+
+<!-- middle -->
+         
+        <div class="boxs">
+    <div class="box">
+        <img src="./coffebeans.jpg" />
+        <br><p>bfbcjsbkb c b ffb </p>
+    </div>
+    <div class="box">
+        <img src="./tea.jpg" />
+        <br><p>bfbcjsbkb c b ffb </p>
+    </div>
+    <div class="box">
+        <img src="./cofeebtm.jpg" />
+        <br><p>bfbcjsbkb c b ffb </p>
+    </div>
+    <div class="box">
+        <img src="./grntea.jpg" />
+        <br><p>bfbcjsbkb c b ffb </p>
+    </div>
+    <div class="box">
+        <img src="./cofee3.jpg" />
+        <br><p>bfbcjsbkb c b ffb </p>
+    </div>
+    </div>
+
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eStartup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    body {
+      padding: 10px;
+      height: 100vh;
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 1rem 2rem;
+        position: relative;
+      
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .logo-e {
+      color: green;
+      margin-right: 5px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 15px 20px;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style-type: none;
+      gap: 25px;
+      color: rgb(102, 99, 99);
+    }
+
+    .navbar ul li {
+      font-weight: 500;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+
+
+    .contentbg {
+      background-color: rgb(250, 248, 246);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0;
+      gap: 30px;
+    }
+
+    .text-block {
+      max-width: 600px;
+      padding-left: 20px;
+    }
+
+    .text-block h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .text-block p {
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .text-block input[type="button"] {
+      background-color: rgb(137, 221, 168);
+      color: white;
+      border-radius: 10px;
+      border: none;
+      padding: 10px 20px;
+      /* cursor: pointer; */
+      margin-right: 15px;
+    }
+
+    .text-block i {
+      color: #33bd5c;
+      font-style: normal;
+      cursor: pointer;
+    }
+
+    .content img {
+      width: 600px;
+      height: auto;
+    }
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: white;
+  border: 2px solid #58ca7b;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);        
+  max-width: 1200px; 
+  padding: 60px;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.watchvideo-text {
+  font-size: 20px;
+  margin-left: 5px;
+  color: #58ca7b;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#dropdown{
+   border: none;
+   appearance: none;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <div class="logo-e">e</div>Startup
+    </div>
+
+    <div class="navbar">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Features</li>
+        <li>Pricing</li>
+        <select id="dropdown" name="dropdown" style="color: rgb(176, 171, 171);
+        font-family: Arial, Helvetica, sans-serif;">
+        <option value="Dropdown">Dropdown</option>
+        <option value="lorem ipsum">lorum ipsum</option>
+       <option value="Magni dolores">Magni dolores</option>
+       </select>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="contentbg">
+  <div class="content">
+    <div class="text-block">
+      <h1>eStartup</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos delectus aliquam sit, dicta doloribus minima facere totam ut pariatur
+        consequuntur rerum corrupti similique, suscipit necessitatibus, velit ducimus nostrum voluptatibus sequi.
+      </p>
+      <input type="button" value="Get Started" />
+      <i class="fa-regular fa-circle-play" style="color: #439d45;">
+        <span class="watchvideo-text">Watch now</span></i>
+    </div>
+    <img src="./estartupimg.png" alt="Laptop Image" />
+  </div>
+
+  <div class="boxes">
+  <div class="box" ><i class="fa-sharp fa-solid fa-chalkboard icon" style="color: #23a925;"></i><br>Lorem Ipsum</div>
+  <div class="box"><i class="fa-regular fa-gem icon" style="color: #23a925;"></i><br>Sed ut perspiciatis</div>
+  <div class="box"><i class="fa-solid fa-location-dot icon" style="color: #23a925;"></i><br>Magni Dolores</div>
+  <div class="box"><i class="fa-solid fa-circle-nodes icon" style="color: #23a925;"></i><br>Nemo Enim</div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
+<!-- estartup_modified have the better drop down version -->

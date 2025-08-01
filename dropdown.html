@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dropdown Navigation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: large;
+  height: 100vh;
+  background-image: url(dropdownimg.jpg); 
+  background-size: cover;    
+  background-position: center; 
+  background-repeat: no-repeat;
+
+}
+
+    nav {
+      background-color: green;
+      padding: 60px 40px;
+      padding-left: 70px;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 60px;
+      justify-content: flex-start;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin-left: 20px;
+      position: relative;
+    }
+
+    .navbar li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+    }
+
+    .navbar li a:hover {
+      background-color: green;
+      border-radius: 5px;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 38px;
+      right: 0;
+      background-color: green;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 160px;
+      border-radius: 4px;
+      overflow: hidden;
+      z-index: 7;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content li a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .sub-trigger {
+      display: inline-block;
+      padding: 10px;
+      color: BLUE;
+      text-decoration: none;
+    }
+
+    .dropdown2 {
+      position: relative;
+    }
+
+    .dropdown-content2 {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 160px;
+      background-color: green;
+      width: 160px;
+      list-style: none;
+      border-radius: 4px;
+      padding: 0;
+      margin: 0;
+      z-index: 999;
+    }
+
+    .dropdown2:hover .dropdown-content2 {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="a"
+    <ul class="navbar">
+      <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+      <li><i class="fa-solid fa-house"></i><a href="#">About</a></li>
+      <div class="dropdown"><i class="fa-solid fa-house"></i>
+        <li>Services</li>
+        <div class="dropdown-content">
+          <p>Web development</p>
+          <p>Marketing</p>
+                <li>
+                  <div class="dropdown2">
+                    <p>Android App</p>
+                    <p>IOS App</p>
+                    <p>Ionic App</p>
+                    <p>Flutter App</p>
+                    <p>Unity App</p>
+                  </div>
+              </p>
+            </div>
+        </div>
+          </li>
+                  <li><i class="fa-solid fa-house"></i><a href="#">Clients</a></li>
+                  <li><i class="fa-solid fa-house"></i><a href="#">Investors</a></li>
+                  <li><i class="fa-solid fa-house"></i><a href="#">Pricing</a></li>
+                  <li><i class="fa-solid fa-house"></i><a href="#">Training</a></li>
+                  <li><i class="fa-solid fa-house"></i><a href="#">Contact</a></li>
+    </div>
+    </ul>
+  </div>
+        </div>
+    </div>
+  </nav>
+</body>
+</html>
