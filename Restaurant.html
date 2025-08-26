@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+      background-image: url(retoimg.jpg);
+      background-repeat:no-repeat ;
+      background-size: cover;
+    }
+
+    .headpart{
+      display: flex;
+      width: auto;
+      height: 80px;
+      color: orange;
+    }
+    .logo{
+      font-size: 40px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    .headpart h1{
+      padding-left: 10px;
+      padding-top: 10px;
+      font-size: 40px; 
+    }
+    .navbar{
+      margin-left: auto;
+
+    }
+    .navbar ul{
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding-right: 20px;
+    }
+    .navbar li{
+      font-size: 18px;
+      color: white;
+      padding-top: 23px;
+    }
+
+    .btn {
+      margin-top: 19px;
+      padding: 8px 16px;
+      font-size: 17px;
+      background-color: #f98a2f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      
+    }
+
+    /* 33333333333333333333333333333333333333333333333333333333 */
+
+
+    .dropdown {
+  position: relative;
+  padding-top: 12px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-toggle {
+  padding: 8px;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: white;
+  color: #f98a2f;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  min-width: 120px;
+  z-index: 7;
+}
+
+.dropdown-content div {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.dropdown-content div:hover {
+  background-color: #f98a2f;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+/* 3333333333333333333333333333333333333333333333 */
+
+.main{
+  display: flex;
+  justify-content: space-between;
+
+}
+.left-container{
+  flex: 1;
+  color: white;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+.left-container h1{
+  font-size: 55px;
+  font-family: cursive;
+}
+.left-container p{
+  padding-top: 20px;
+}
+.btn2 {
+    margin-top: 19px;
+    padding: 8px 16px;
+    font-size: 17px;
+    background-color: #f5740b; /* a liitle clr change from btn1 */
+    color: white;
+    border: none;
+    border-radius: 4px;  
+}
+.right-container img{
+      width: 300px;
+      height: auto;
+      margin-left: 200px;
+      border-radius: 500px;
+      margin-top: 100px;
+      margin-right:150px;
+      transition: width 2s,height 2s, transform 2s;
+}
+.right-container img:hover{
+        width: 550px;
+        height: auto;
+        transform: rotate(180deg);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .headpart {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .left-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .left-container h1 {
+    font-size: 40px;
+  }
+
+  .right-container img {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    transform: none; /* Remove rotation on small screens */
+  }
+
+  .btn, .btn2 {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <div class="headpart"> 
+        <i class="fa-solid fa-utensils logo" style="color: #f98a2f;" ></i>
+        <div>
+        <h1>Restoran</h1>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICE</li>
+            <li>MENU</li>
+            <div class="dropdown">
+            <div class="dropdown-toggle">PAGES⏷</div>
+            <div class="dropdown-content">
+              <div>Gallery</div>
+              <div>Team</div>
+            </div>
+          </div>
+            <li>CONTACT</li>
+            <input type="button" class="btn" value="BOOK A TABLE" />
+          </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="left-container">
+        <h1>Enjoy Our<br>Delicious Meals</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam excepturi mollitia dignissimos cupiditate veritatis<br> cumque debitis velit ad reiciendis, laudantium quidem recusandae quis. Magni exercitationem dolorum
+           <br>molestiae consequatur non?</p>
+        <input type="button" value="BOOK A TABLE" class="btn2" />      
+      </div>
+      <div class="right-container">
+            <img src="./grilledpic.jpg" class="grillimg"/>
+      </div>
+    </div>
+</body>
+</html>

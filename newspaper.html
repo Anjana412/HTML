@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+            background-color: rgb(235,230,230);
+            text-align: center;
+            height: 80PX;
+            padding-top: 20px;
+        }
+    .navbar{
+       display: flex;
+        height: 80px;
+        justify-content: flex-end;
+        background-color: white;
+        box-shadow: 2px;
+        border: 1px solid lightgray;
+        justify-content: space-between;
+
+    }
+    .navbar h1{
+        justify-content: flex-start;
+        padding-top: 20px;
+        color: black;
+        margin: 0;
+}
+    
+    .navbar ul{
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding-right: 20px;
+    }
+    .navbar li{
+      font-size: 20px;
+      color: black;
+      padding-top: 23px;
+    }
+    .content {
+  display: flex;
+  gap: 20px;
+  padding: 40px 20px;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  background-color: #fce4ec;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.column:hover {
+  transform: translateY(-5px);
+}
+
+.content h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Newspaper</h1>
+    </div>
+
+     <div class="navbar">
+        <h1>Newspaper.</h1>
+        <ul>
+        <li>Home page</li>
+        <li>Simple post</li>
+        <li>About us</li>
+        <li>Blog </li>
+        </ul>
+     </div>
+     <div class="content">
+        <div class="c1">
+        <h1>Fashion Category</h1>
+        <img src="kid2.jpeg" /><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores modi voluptates nam doloremque consectetur! Voluptate rem amet neque repellendus.</p>
+        </div>
+        <h1>Modern Post</h1>
+        <img src="kid2.jpeg" />
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus sequi modi quis voluptas quaerat molestiae sapiente dignissimos a voluptatibus corporis.</p>
+     </div>
+</body>
+</html>
